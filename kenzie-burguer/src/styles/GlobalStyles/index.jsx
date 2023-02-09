@@ -4,7 +4,7 @@ export const GlobalStyle = createGlobalStyle`
 
   :root{
     --brand-color: rgba(39, 174, 96, 1);
-    --brand-hover:
+    --brand-hover: #38c673;
     
     --grey-1: rgba(51, 51, 51, 1);
     --grey-2: rgba(130, 130, 130, 1);

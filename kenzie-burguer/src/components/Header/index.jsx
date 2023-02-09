@@ -1,6 +1,7 @@
 import React from "react";
 import { HeaderStyles } from "../../styles/HeaderStyles";
 import logo from "../../assets/logo.svg";
+import Button from "../Button";
 
 export default function Header() {
   return (
@@ -11,7 +12,7 @@ export default function Header() {
           <div>
             <input type="text" placeholder="Digitar Pesquisa" />
             <div></div>
-            <button>Pesquisar</button>
+            <Button />
           </div>
         </section>
       </HeaderStyles>
