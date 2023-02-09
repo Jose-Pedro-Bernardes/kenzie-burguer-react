@@ -6,8 +6,8 @@ import { ResetStyles } from "./styles/ResetStyles";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ResetStyles />
     <GlobalStyle />
+    <ResetStyles />
     <App />
   </React.StrictMode>
 );
