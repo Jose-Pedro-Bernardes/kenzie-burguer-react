@@ -58,20 +58,6 @@ export const HeaderStyles = styled.header`
         position: absolute;
         top: 13px;
         right: 10px;
-
-        width: 6.688rem;
-        height: 2.5rem;
-
-        background-color: var(--brand-color);
-        color: rgba(255, 255, 255, 1);
-
-        border: none;
-        border-radius: 8px;
-
-        font-size: var(--body);
-        font-weight: 500;
-
-        cursor: pointer;
       }
 
       button:hover {

@@ -1,9 +1,10 @@
 import React from "react";
+import { ButtonStyles } from "../../styles/ButtonStyles";
 
 export default function Button() {
   return (
     <>
-      <button>Pesquisar</button>
+      <ButtonStyles>Pesquisar</ButtonStyles>
     </>
   );
 }
