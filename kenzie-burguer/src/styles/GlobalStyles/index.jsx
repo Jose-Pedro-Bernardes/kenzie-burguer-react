@@ -3,7 +3,8 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyle = createGlobalStyle`
 
   :root{
-    --brand-color: #fa6000;
+    --brand-color: rgba(39, 174, 96, 1);
+    --brand-hover:
     
     --grey-1: rgba(51, 51, 51, 1);
     --grey-2: rgba(130, 130, 130, 1);
@@ -22,6 +23,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background: rgba(245, 245, 245, 1);
     font-family: 'Inter', sans-serif;
+    width: 100vw;
   }
 
   
