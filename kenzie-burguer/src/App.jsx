@@ -51,9 +51,7 @@ function App() {
           </section>
           <aside>
             <h2></h2>
-            <ul>
-              <li></li>
-            </ul>
+            <ul></ul>
           </aside>
         </div>
       </MainStyles>
