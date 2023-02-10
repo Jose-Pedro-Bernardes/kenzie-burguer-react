@@ -1,18 +1,22 @@
 import React from "react";
 
-export default function Card({ children, id, img, name, category, price }) {
+export default function Card({ children, product }) {
   return (
     <>
-      <li key={id}>
+      <li key={product.id}>
         <figure>
-          <img src={img} alt={name} />
+          <img src={product.img} alt={product.name} />
         </figure>
         <div>
           <div>
-            <h2>{name}</h2>
-            <p>{category}</p>
+            <h2>{product.name}</h2>
+            <p>{product.category}</p>
             <h3>
-              R$ {parseFloat(price).toFixed(2).toString().replace(".", ",")}
+              R${" "}
+              {parseFloat(product.price)
+                .toFixed(2)
+                .toString()
+                .replace(".", ",")}
             </h3>
           </div>
         </div>

@@ -4,6 +4,7 @@ import Button from "./components/Button";
 import { useState, useEffect } from "react";
 import { AxiosInstance } from "./requests/AxiosInstance";
 import { MainStyles } from "./styles/MainStyles";
+import Cart from "./components/Cart";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -24,8 +25,12 @@ function App() {
 
   function addToCart(product) {
     setCart([...cart, product]);
-    console.log(cart);
   }
+
+  function removeProduct(id) {
+    setCart(cart.filter((product) => product.id !== id));
+  }
+
   return (
     <div className="App">
       <Header />
@@ -34,13 +39,7 @@ function App() {
           <section>
             <ul>
               {products.map((product) => (
-                <Card
-                  id={product.id}
-                  img={product.img}
-                  name={product.name}
-                  category={product.category}
-                  price={product.price}
-                >
+                <Card product={product}>
                   <Button
                     onClick={() => addToCart(product)}
                     text="Adicionar"
@@ -49,10 +48,7 @@ function App() {
               ))}
             </ul>
           </section>
-          <aside>
-            <h2></h2>
-            <ul></ul>
-          </aside>
+          <Cart removeProduct={removeProduct} cart={cart} />
         </div>
       </MainStyles>
     </div>
