@@ -49,6 +49,12 @@ function App() {
               ))}
             </ul>
           </section>
+          <aside>
+            <h2></h2>
+            <ul>
+              <li></li>
+            </ul>
+          </aside>
         </div>
       </MainStyles>
     </div>
