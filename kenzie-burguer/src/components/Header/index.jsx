@@ -1,5 +1,5 @@
 import React from "react";
-import { HeaderStyles } from "../../styles/HeaderStyles";
+import { HeaderStyles } from "./stylesHeader";
 import logo from "../../assets/logo.svg";
 import InputSearch from "../InputSearch";
 

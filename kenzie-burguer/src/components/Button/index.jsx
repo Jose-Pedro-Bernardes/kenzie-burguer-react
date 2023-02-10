@@ -1,5 +1,5 @@
 import React from "react";
-import { ButtonStyles } from "../../styles/ButtonStyles";
+import { ButtonStyles } from "./stylesButton";
 
 export default function Button({ onClick, text }) {
   return (
