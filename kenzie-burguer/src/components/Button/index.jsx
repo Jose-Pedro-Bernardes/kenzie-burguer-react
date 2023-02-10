@@ -1,10 +1,10 @@
 import React from "react";
 import { ButtonStyles } from "../../styles/ButtonStyles";
 
-export default function Button() {
+export default function Button({ onClick, text }) {
   return (
     <>
-      <ButtonStyles>Pesquisar</ButtonStyles>
+      <ButtonStyles onClick={onClick}>{text}</ButtonStyles>
     </>
   );
 }

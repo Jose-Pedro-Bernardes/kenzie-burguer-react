@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Button from "./components/Button";
 import { useState, useEffect } from "react";
 import { AxiosInstance } from "./requests/AxiosInstance";
+import { MainStyles } from "./styles/MainStyles";
 
 function App() {
   const [products, setProducts] = useState([]);
@@ -23,26 +24,33 @@ function App() {
 
   function addToCart(product) {
     setCart([...cart, product]);
+    console.log(cart);
   }
-
   return (
     <div className="App">
       <Header />
-      <main>
-        <ul>
-          {products.map((product) => (
-            <Card
-              id={product.id}
-              img={product.img}
-              name={product.name}
-              category={product.category}
-              price={product.price}
-            >
-              <Button id={product.id}>Adicionar</Button>
-            </Card>
-          ))}
-        </ul>
-      </main>
+      <MainStyles>
+        <div>
+          <section>
+            <ul>
+              {products.map((product) => (
+                <Card
+                  id={product.id}
+                  img={product.img}
+                  name={product.name}
+                  category={product.category}
+                  price={product.price}
+                >
+                  <Button
+                    onClick={() => addToCart(product)}
+                    text="Adicionar"
+                  ></Button>
+                </Card>
+              ))}
+            </ul>
+          </section>
+        </div>
+      </MainStyles>
     </div>
   );
 }

@@ -59,10 +59,6 @@ export const HeaderStyles = styled.header`
         top: 13px;
         right: 10px;
       }
-
-      button:hover {
-        background-color: var(--brand-hover);
-      }
     }
   }
   @media (min-width: 700px) {
@@ -73,8 +69,8 @@ export const HeaderStyles = styled.header`
 
       gap: 13.9px;
       height: 100%;
-      width: 90%;
-      max-width: 100%;
+      width: 1350px;
+      max-width: 90%;
 
       div {
         max-width: 80%;
@@ -128,11 +124,13 @@ export const HeaderStyles = styled.header`
 
           cursor: pointer;
         }
-
-        button:hover {
-          background-color: var(--brand-hover);
-        }
       }
+    }
+  }
+
+  @media (min-width: 900px) {
+    button:hover {
+      background-color: var(--brand-hover);
     }
   }
 `;

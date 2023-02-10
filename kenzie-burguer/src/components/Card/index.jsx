@@ -4,15 +4,17 @@ export default function Card({ children, id, img, name, category, price }) {
   return (
     <>
       <li key={id}>
-        <div>
+        <figure>
           <img src={img} alt={name} />
-        </div>
+        </figure>
         <div>
-          <h2>{name}</h2>
-          <p>{category}</p>
-          <h3>
-            R$ {parseFloat(price).toFixed(2).toString().replace(".", ",")}
-          </h3>
+          <div>
+            <h2>{name}</h2>
+            <p>{category}</p>
+            <h3>
+              R$ {parseFloat(price).toFixed(2).toString().replace(".", ",")}
+            </h3>
+          </div>
         </div>
         {children}
       </li>

@@ -6,7 +6,7 @@ export default function InputSearch() {
     <>
       <input type="text" placeholder="Digitar Pesquisa" />
       <div></div>
-      <Button />
+      <Button text="Pesquisar" />
     </>
   );
 }
