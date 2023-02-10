@@ -21,12 +21,7 @@ export default function Cart({ cart, removeProduct }) {
             <ul>
               {cart.map((product) => {
                 return (
-                  <CardCart
-                    key={product.id}
-                    img={product.img}
-                    name={product.name}
-                    category={product.category}
-                  >
+                  <CardCart product={product}>
                     <button onClick={() => removeProduct(product.id)}>
                       Remover
                     </button>

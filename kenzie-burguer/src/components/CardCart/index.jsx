@@ -1,16 +1,16 @@
 import React from "react";
 
-export default function CardCart({ children, key, img, name, category }) {
+export default function CardCart({ children, product }) {
   return (
     <>
-      <li key={key}>
+      <li key={product.id}>
         <figure>
-          <img src={img} alt={name} />
+          <img src={product.img} alt={product.name} />
         </figure>
 
         <div>
-          <h2>{name}</h2>
-          <p>{category}</p>
+          <h2>{product.name}</h2>
+          <p>{product.category}</p>
         </div>
 
         {children}
