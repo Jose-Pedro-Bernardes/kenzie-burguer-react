@@ -9,9 +9,7 @@ export default function Header() {
       <HeaderStyles>
         <section>
           <img src={logo} alt="Logo Burguer Kenzie" />
-          <div>
-            <InputSearch />
-          </div>
+          <InputSearch />
         </section>
       </HeaderStyles>
     </>
