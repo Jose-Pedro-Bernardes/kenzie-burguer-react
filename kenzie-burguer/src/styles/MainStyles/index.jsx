@@ -24,11 +24,14 @@ export const MainStyles = styled.main`
 
       ul {
         display: flex;
-        margin-left: 25px;
+        margin-left: 20px;
         margin-top: 20px;
         align-self: center;
         gap: 20px;
       }
+    }
+    section::-webkit-scrollbar {
+      background-color: transparent;
     }
   }
 `;

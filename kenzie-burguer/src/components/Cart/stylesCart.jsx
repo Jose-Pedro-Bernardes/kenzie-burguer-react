@@ -10,7 +10,7 @@ export const CartStyles = styled.aside`
   .title {
     width: 35.25rem;
     height: 4.063rem;
-    max-width: 80%;
+    max-width: 90%;
 
     display: flex;
     justify-content: center;
@@ -28,9 +28,9 @@ export const CartStyles = styled.aside`
   .emptyList {
     width: 35.25rem;
     height: 9.875rem;
-    max-width: 80%;
+    max-width: 90%;
 
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     border-radius: 0px 0px 5px 5px;
 

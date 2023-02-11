@@ -19,7 +19,7 @@ export const HeaderStyles = styled.header`
 
     gap: 13.9px;
     height: 100%;
-    max-width: 100%;
+    max-width: 90%;
   }
   @media (min-width: 700px) {
     section {

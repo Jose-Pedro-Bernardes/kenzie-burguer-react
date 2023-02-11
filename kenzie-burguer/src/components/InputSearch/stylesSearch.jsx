@@ -1,36 +1,26 @@
 import styled from "styled-components";
 
 export const SearchStyles = styled.div`
-  max-width: 80%;
+  max-width: 100%;
   position: relative;
   display: flex;
 
   input {
-    width: 18rem;
+    width: 29rem;
     max-width: 100%;
     height: 3.75rem;
     padding-left: 10px;
+    position: relative;
+
+    align-self: flex-start;
 
     background-color: rgba(255, 255, 255, 1);
 
     border: 2px solid rgba(224, 224, 224, 1);
-    border-right: none;
-    border-bottom-left-radius: 8px;
-    border-top-left-radius: 8px;
+
+    border-radius: 5px;
 
     outline: none;
-  }
-
-  div {
-    width: 5.25rem;
-    height: 3.875rem;
-
-    background-color: rgba(255, 255, 255, 1);
-
-    border: 2px solid rgba(224, 224, 224, 1);
-    border-left: none;
-    border-bottom-right-radius: 8px;
-    border-top-right-radius: 8px;
   }
 
   button {
