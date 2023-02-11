@@ -33,10 +33,4 @@ export const HeaderStyles = styled.header`
       max-width: 90%;
     }
   }
-
-  @media (min-width: 900px) {
-    button:hover {
-      background-color: var(--brand-hover);
-    }
-  }
 `;

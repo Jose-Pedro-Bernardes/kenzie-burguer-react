@@ -94,4 +94,10 @@ export const SearchStyles = styled.div`
       }
     }
   }
+
+  @media (min-width: 900px) {
+    button:hover {
+      background-color: var(--brand-hover);
+    }
+  }
 `;

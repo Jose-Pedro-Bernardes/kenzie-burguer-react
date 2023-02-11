@@ -1,9 +1,10 @@
 import React from "react";
+import { CardStyles } from "./stylesCard";
 
 export default function Card({ children, product }) {
   return (
     <>
-      <li key={product.id}>
+      <CardStyles key={product.id}>
         <figure>
           <img src={product.img} alt={product.name} />
         </figure>
@@ -21,7 +22,7 @@ export default function Card({ children, product }) {
           </div>
         </div>
         {children}
-      </li>
+      </CardStyles>
     </>
   );
 }
