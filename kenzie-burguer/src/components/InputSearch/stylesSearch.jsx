@@ -85,7 +85,11 @@ export const SearchStyles = styled.div`
     }
   }
 
-  @media (min-width: 900px) {
+  @media (min-width: 700px) {
+    width: 20rem;
+  }
+
+  @media (min-width: 1000px) {
     button:hover {
       background-color: var(--brand-hover);
     }

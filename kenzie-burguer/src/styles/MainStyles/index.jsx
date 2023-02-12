@@ -10,7 +10,7 @@ export const MainStyles = styled.main`
   justify-content: center;
 
   div {
-    width: 100%;
+    max-width: 100%;
 
     display: flex;
     flex-direction: column;

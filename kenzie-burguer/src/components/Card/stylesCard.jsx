@@ -49,7 +49,7 @@ export const CardStyles = styled.li`
     margin-left: 15px;
   }
 
-  @media (min-width: 900px) {
+  @media (min-width: 1000px) {
     transition: 0.5s;
 
     :hover {

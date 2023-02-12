@@ -19,7 +19,7 @@ export default function Cart({ cart, removeProduct }) {
           </>
         ) : (
           <>
-            <ul>
+            <ul className="productList">
               {cart.map((product) => {
                 return (
                   <CardCart product={product}>

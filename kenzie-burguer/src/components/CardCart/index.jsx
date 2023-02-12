@@ -3,7 +3,7 @@ import React from "react";
 export default function CardCart({ children, product }) {
   return (
     <>
-      <li className="productList" key={product.id}>
+      <li key={product.id}>
         <figure>
           <img src={product.img} alt={product.name} />
         </figure>

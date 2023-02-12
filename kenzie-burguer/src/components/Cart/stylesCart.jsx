@@ -44,18 +44,21 @@ export const CartStyles = styled.aside`
       display: flex;
       flex-direction: column;
       align-items: center;
+      max-width: 100%;
 
       gap: 10px;
 
       h2 {
         font-size: 1.125rem;
         font-weight: 600;
+        max-width: 100%;
       }
       p {
         font-size: 0.875rem;
         font-weight: 400;
 
         color: var(--grey-2);
+        max-width: 100%;
       }
     }
   }

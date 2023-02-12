@@ -6,7 +6,6 @@ export default function InputSearch({ searchProduct }) {
   return (
     <SearchStyles>
       <input maxLength="20" type="text" placeholder="Digitar Pesquisa" />
-      <div></div>
       <Button text="Pesquisar" />
     </SearchStyles>
   );
