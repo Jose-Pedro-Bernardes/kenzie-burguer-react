@@ -18,19 +18,17 @@ export default function Cart({ cart, removeProduct }) {
             </ul>
           </>
         ) : (
-          <>
-            <ul className="productList">
-              {cart.map((product) => {
-                return (
-                  <CardCart product={product}>
-                    <button onClick={() => removeProduct(product.id)}>
-                      Remover
-                    </button>
-                  </CardCart>
-                );
-              })}
-            </ul>
-          </>
+          <ul className="productList">
+            {cart.map((product) => {
+              return (
+                <CardCart product={product}>
+                  <button onClick={() => removeProduct(product.id)}>
+                    Remover
+                  </button>
+                </CardCart>
+              );
+            })}
+          </ul>
         )}
       </CartStyles>
     </>

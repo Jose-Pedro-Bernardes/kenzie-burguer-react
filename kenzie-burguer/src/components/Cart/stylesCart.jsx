@@ -62,4 +62,18 @@ export const CartStyles = styled.aside`
       }
     }
   }
+
+  .productList {
+    width: 100%;
+    width: 35.25rem;
+    max-width: 90%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 28px;
+    padding-top: 25px;
+
+    background-color: #ebebeb;
+  }
 `;
