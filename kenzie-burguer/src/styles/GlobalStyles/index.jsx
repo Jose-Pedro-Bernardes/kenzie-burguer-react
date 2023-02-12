@@ -8,8 +8,8 @@ export const GlobalStyle = createGlobalStyle`
     
     --grey-1: rgba(51, 51, 51, 1);
     --grey-2: rgba(130, 130, 130, 1);
-    --grey-3: rgba(189, 189, 189, 1);
-    --grey-4: rgba(224, 224, 224, 1);
+    --grey-3: #c6c6c6a9;
+    --grey-4: #f4f4f4;
 
     --heading-3: 1.125rem;
     --heading-4: 0.875rem;

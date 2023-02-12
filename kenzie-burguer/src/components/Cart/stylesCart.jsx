@@ -32,8 +32,6 @@ export const CartStyles = styled.aside`
 
     margin-bottom: 30px;
 
-    border-radius: 0px 0px 5px 5px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,8 +71,6 @@ export const CartStyles = styled.aside`
 
     gap: 28px;
     padding: 25px 0;
-
-    border-radius: 5px 5px 0px 0px;
 
     background-color: #ebebeb;
   }

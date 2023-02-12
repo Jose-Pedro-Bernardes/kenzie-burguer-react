@@ -6,14 +6,15 @@ export default function TotalCard({ totalValue, removeAllItens }) {
   return (
     <>
       <TotalCardStyles>
-        <div>
+        <div className="text-align">
           <h3>Total</h3>
           <p>
+            R${" "}
             {/* {parseFloat(totalValue).toFixed(2).toString().replace(".", ",")} */}
-            R$40,00
+            40,00
           </p>
         </div>
-        <Button onClick={removeAllItens} />
+        <Button text="Remover itens" onClick={removeAllItens} />
       </TotalCardStyles>
     </>
   );
