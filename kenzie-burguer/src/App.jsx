@@ -29,7 +29,9 @@ function App() {
   }
 
   function addToCart(product) {
-    setCart([...cart, product]);
+    if (!cart.find((productF) => productF.id === product.id)) {
+      setCart([...cart, product]);
+    }
   }
 
   function removeProduct(id) {
