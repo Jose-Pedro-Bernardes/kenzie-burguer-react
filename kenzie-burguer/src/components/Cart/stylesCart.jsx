@@ -73,7 +73,7 @@ export const CartStyles = styled.aside`
     flex-direction: column;
 
     gap: 28px;
-    padding-top: 25px;
+    padding: 25px 0;
 
     border-radius: 5px 5px 0px 0px;
 
