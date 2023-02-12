@@ -9,7 +9,7 @@ import Cart from "./components/Cart";
 function App() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
-  const [inputValue, setInput] = useState("");
+  const [searchValue, setSearch] = useState("");
 
   useEffect(() => {
     async function productList() {
@@ -24,8 +24,32 @@ function App() {
     productList();
   }, []);
 
+  function searchProducts(products) {
+    const filteredProducts = products.filter(
+      (product) =>
+        product.name.toLowerCase().includes(searchValue) ||
+        product.category
+          .normalize("NFD")
+          .toLowerCase()
+          .replace(/[\u0300-\u036f]/g, "")
+          .includes(searchValue)
+    );
+
+    setProducts(filteredProducts);
+  }
+
   function handleSearch(event) {
-    setSearch(event.target.value);
+    setSearch(
+      event.target.value
+        .normalize("NFD")
+        .toLowerCase()
+        .replace(/[\u0300-\u036f]/g, "")
+    );
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+    searchProducts(products);
   }
 
   function addToCart(product) {
@@ -44,7 +68,11 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header
+        handleSubmit={handleSubmit}
+        inputValue={searchValue}
+        handleSearch={handleSearch}
+      />
       <MainStyles>
         <div>
           <section>
