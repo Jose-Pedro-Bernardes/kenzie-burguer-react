@@ -8,7 +8,7 @@ export const CardStyles = styled.li`
   flex-direction: column;
   gap: 22px;
 
-  border: 2px solid rgba(224, 224, 224, 1);
+  border: 2px solid #c8c8c8;
   border-radius: 5px;
 
   figure {

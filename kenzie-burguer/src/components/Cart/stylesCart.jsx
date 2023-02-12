@@ -67,7 +67,6 @@ export const CartStyles = styled.aside`
     width: 100%;
     width: 35.25rem;
     max-width: 90%;
-    margin-bottom: 30px;
 
     display: flex;
     flex-direction: column;

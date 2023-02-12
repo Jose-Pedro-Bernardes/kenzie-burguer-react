@@ -19,8 +19,7 @@ export const SearchStyles = styled.div`
     border: 2px solid rgba(224, 224, 224, 1);
 
     border-radius: 5px;
-
-    outline: none;
+    outline-color: black;
   }
 
   button {
@@ -47,8 +46,6 @@ export const SearchStyles = styled.div`
         border-right: none;
         border-bottom-left-radius: 8px;
         border-top-left-radius: 8px;
-
-        outline: none;
       }
 
       div {
