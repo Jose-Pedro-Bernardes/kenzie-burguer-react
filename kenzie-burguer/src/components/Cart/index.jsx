@@ -3,7 +3,7 @@ import CardCart from "../CardCart";
 import TotalCard from "../TotalCard";
 import { CartStyles } from "./stylesCart";
 
-export default function Cart({ cart, removeProduct }) {
+export default function Cart({ cart, removeProduct, removeAllCart }) {
   return (
     <>
       <CartStyles>
@@ -31,7 +31,7 @@ export default function Cart({ cart, removeProduct }) {
                 );
               })}
             </ul>
-            <TotalCard cart={cart} />
+            <TotalCard removeAllCart={removeAllCart} cart={cart} />
           </>
         )}
       </CartStyles>

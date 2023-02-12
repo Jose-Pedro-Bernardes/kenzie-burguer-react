@@ -3,7 +3,7 @@ import Button from "../Button";
 import { TotalCardStyles } from "./stylesCard";
 import SunValue from "../SunValue";
 
-export default function TotalCard({ cart, removeAllItens }) {
+export default function TotalCard({ cart, removeAllCart }) {
   return (
     <>
       <TotalCardStyles>
@@ -14,7 +14,7 @@ export default function TotalCard({ cart, removeAllItens }) {
             {parseFloat(SunValue(cart)).toFixed(2).toString().replace(".", ",")}
           </p>
         </div>
-        <Button text="Remover itens" onClick={removeAllItens} />
+        <Button text="Remover tudo" onClick={removeAllCart} />
       </TotalCardStyles>
     </>
   );

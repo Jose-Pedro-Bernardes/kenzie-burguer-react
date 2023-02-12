@@ -36,6 +36,10 @@ function App() {
     setCart(cart.filter((product) => product.id !== id));
   }
 
+  function removeAllCart() {
+    setCart([]);
+  }
+
   return (
     <div className="App">
       <Header />
@@ -53,7 +57,11 @@ function App() {
               ))}
             </ul>
           </section>
-          <Cart removeProduct={removeProduct} cart={cart} />
+          <Cart
+            removeAllCart={removeAllCart}
+            removeProduct={removeProduct}
+            cart={cart}
+          />
         </div>
       </MainStyles>
     </div>
