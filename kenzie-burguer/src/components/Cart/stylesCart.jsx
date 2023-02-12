@@ -30,6 +30,8 @@ export const CartStyles = styled.aside`
     height: 9.875rem;
     max-width: 90%;
 
+    border-radius: 0 0 5px 5px;
+
     margin-bottom: 30px;
 
     display: flex;

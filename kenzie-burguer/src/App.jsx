@@ -9,6 +9,7 @@ import Cart from "./components/Cart";
 function App() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
+  const [inputValue, setInput] = useState("");
 
   useEffect(() => {
     async function productList() {
@@ -22,6 +23,10 @@ function App() {
 
     productList();
   }, []);
+
+  function handleSearch(event) {
+    setSearch(event.target.value);
+  }
 
   function addToCart(product) {
     setCart([...cart, product]);

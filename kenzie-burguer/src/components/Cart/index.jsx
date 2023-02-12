@@ -31,7 +31,7 @@ export default function Cart({ cart, removeProduct }) {
                 );
               })}
             </ul>
-            <TotalCard />
+            <TotalCard cart={cart} />
           </>
         )}
       </CartStyles>
