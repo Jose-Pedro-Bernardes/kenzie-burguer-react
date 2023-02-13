@@ -48,18 +48,6 @@ export const SearchStyles = styled.div`
         border-top-left-radius: 8px;
       }
 
-      div {
-        width: 5.25rem;
-        height: 3.875rem;
-
-        background-color: rgba(255, 255, 255, 1);
-
-        border: 2px solid rgba(224, 224, 224, 1);
-        border-left: none;
-        border-bottom-right-radius: 8px;
-        border-top-right-radius: 8px;
-      }
-
       button {
         position: absolute;
         top: 13px;

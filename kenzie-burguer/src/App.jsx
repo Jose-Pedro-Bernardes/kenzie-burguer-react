@@ -92,21 +92,21 @@ function App() {
         handleSearch={handleSearch}
       />
       <MainStyles>
-        <div>
-          {products === allProducts ? null : (
-            <div className="searchResultHeader">
-              <Button onClick={showAllProducts} classN="allProductsBtn">
-                <img
-                  src={arrow}
-                  alt="Seta indicando a voltar para todos os produtos "
-                />
-              </Button>
-              <h1>
-                Resultado Para: <span>"{searchResult}"</span>
-              </h1>
-            </div>
-          )}
-          <section>
+        {products === allProducts ? null : (
+          <div className="searchResultHeader">
+            <Button onClick={showAllProducts} classN="allProductsBtn">
+              <img
+                src={arrow}
+                alt="Seta indicando a voltar para todos os produtos "
+              />
+            </Button>
+            <h1>
+              Resultado Para: <span>"{searchResult}"</span>
+            </h1>
+          </div>
+        )}
+        <div className="alignMain">
+          <section className="sectionShowCards">
             <ul>
               {products.map((product) => (
                 <Card product={product}>

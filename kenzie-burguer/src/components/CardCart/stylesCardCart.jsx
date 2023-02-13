@@ -27,7 +27,7 @@ export const CardCartStyles = styled.li`
     h2 {
       font-size: 0.7rem;
       font-weight: 700;
-      line-height: 15px;
+      line-height: 18px;
     }
     p {
       font-size: 0.6rem;
@@ -77,6 +77,19 @@ export const CardCartStyles = styled.li`
       p {
         font-size: 0.8rem;
         font-weight: 400;
+      }
+    }
+  }
+
+  @media (min-width: 1000px) {
+    div {
+      align-items: flex-start;
+      width: 80px;
+      h2 {
+        font-size: 0.9rem;
+      }
+      p {
+        font-size: 0.7rem;
       }
     }
   }

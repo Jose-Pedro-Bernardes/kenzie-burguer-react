@@ -23,7 +23,7 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background: rgba(245, 245, 245, 1);
     font-family: 'Inter', sans-serif;
-    width: 100vw;
+    
   }
 
   

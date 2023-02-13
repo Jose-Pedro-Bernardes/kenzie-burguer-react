@@ -76,4 +76,19 @@ export const CartStyles = styled.aside`
 
     background-color: #ebebeb;
   }
+
+  @media (min-width: 1000px) {
+    width: 500px;
+    max-width: 30%;
+    .title {
+      max-width: 100%;
+    }
+
+    .emptyList {
+      max-width: 100%;
+    }
+    .productList {
+      max-width: 100%;
+    }
+  }
 `;
