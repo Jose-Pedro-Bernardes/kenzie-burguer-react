@@ -12,6 +12,7 @@ function App() {
   const [allProducts, setAllProducts] = useState([]);
   const [cart, setCart] = useState([]);
   const [searchValue, setSearch] = useState("");
+  const [searchResult, setSearchResult] = useState("");
 
   useEffect(() => {
     async function productList() {
@@ -46,7 +47,9 @@ function App() {
           .includes(searchValue)
     );
 
+    setSearchResult(searchValue);
     setProducts(filteredProducts);
+    setSearch("");
   }
 
   function handleSearch(event) {
@@ -91,12 +94,17 @@ function App() {
       <MainStyles>
         <div>
           {products === allProducts ? null : (
-            <Button onClick={showAllProducts} classN="allProductsBtn">
-              <img
-                src={arrow}
-                alt="Seta indicando a voltar para todos os produtos "
-              />
-            </Button>
+            <div className="searchResultHeader">
+              <Button onClick={showAllProducts} classN="allProductsBtn">
+                <img
+                  src={arrow}
+                  alt="Seta indicando a voltar para todos os produtos "
+                />
+              </Button>
+              <h1>
+                Resultado Para: <span>"{searchResult}"</span>
+              </h1>
+            </div>
           )}
           <section>
             <ul>

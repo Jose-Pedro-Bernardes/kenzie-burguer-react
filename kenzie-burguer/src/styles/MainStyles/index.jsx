@@ -16,15 +16,42 @@ export const MainStyles = styled.main`
     flex-direction: column;
     gap: 20px;
 
-    .allProductsBtn {
-      margin-left: 20px;
+    .searchResultHeader {
+      width: 100%;
 
       display: flex;
-      align-items: center;
-      justify-content: center;
-      object-fit: cover;
-    }
+      flex-direction: row;
 
+      h1 {
+        display: flex;
+        align-self: center;
+        font-size: 1rem;
+        font-weight: 700;
+        margin-left: 20px;
+        max-width: 100%;
+
+        span {
+          max-width: 100%;
+          display: flex;
+          align-self: end;
+          font-size: 0.9rem;
+          font-weight: 400;
+
+          margin-left: 5px;
+
+          color: var(--grey-2);
+        }
+      }
+
+      .allProductsBtn {
+        margin-left: 20px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+      }
+    }
     section {
       width: 100%;
       height: 400px;
