@@ -16,6 +16,15 @@ export const MainStyles = styled.main`
     flex-direction: column;
     gap: 20px;
 
+    .allProductsBtn {
+      margin-left: 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      object-fit: cover;
+    }
+
     section {
       width: 100%;
       height: 400px;

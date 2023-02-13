@@ -5,9 +5,11 @@ import { useState, useEffect } from "react";
 import { AxiosInstance } from "./requests/AxiosInstance";
 import { MainStyles } from "./styles/MainStyles";
 import Cart from "./components/Cart";
+import arrow from "./assets/left.png";
 
 function App() {
   const [products, setProducts] = useState([]);
+  const [allProducts, setAllProducts] = useState([]);
   const [cart, setCart] = useState([]);
   const [searchValue, setSearch] = useState("");
 
@@ -16,6 +18,7 @@ function App() {
       try {
         const response = await AxiosInstance.get("products");
         setProducts(response.data);
+        setAllProducts(response.data);
       } catch (error) {
         console.log(error.message);
       }
@@ -25,9 +28,17 @@ function App() {
   }, []);
 
   function searchProducts(products) {
+    if (searchValue === "") {
+      setProducts(allProducts);
+      return;
+    }
     const filteredProducts = products.filter(
       (product) =>
-        product.name.toLowerCase().includes(searchValue) ||
+        product.name
+          .normalize("NFD")
+          .toLowerCase()
+          .replace(/[\u0300-\u036f]/g, "")
+          .includes(searchValue) ||
         product.category
           .normalize("NFD")
           .toLowerCase()
@@ -49,7 +60,11 @@ function App() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    searchProducts(products);
+    searchProducts(allProducts);
+  }
+
+  function showAllProducts() {
+    setProducts(allProducts);
   }
 
   function addToCart(product) {
@@ -75,6 +90,14 @@ function App() {
       />
       <MainStyles>
         <div>
+          {products === allProducts ? null : (
+            <Button onClick={showAllProducts} classN="allProductsBtn">
+              <img
+                src={arrow}
+                alt="Seta indicando a voltar para todos os produtos "
+              />
+            </Button>
+          )}
           <section>
             <ul>
               {products.map((product) => (
